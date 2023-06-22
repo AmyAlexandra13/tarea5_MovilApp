@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>momentos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item *ngFor="let moments of momentos">
+    <h3>{{moments.title}}</h3>  
+  
+  
+   
+    <iframe class="e2e-iframe-trusted-src" width="560" height="315" [src]="moments.url"></iframe>
+</ion-item>
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Acerca de</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <h1>Toy story </h1>
+  <h3>Cuenta con una secuela de 3 peliculas</h3> 
+
+  <ion-list>
+    <ion-card *ngFor="let card of serie">
+      <img alt="" [src]="card.url" />
+      <ion-card-header>
+        <ion-card-title></ion-card-title>
+        <ion-card-subtitle>{{card.title}}</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+
+  </ion-list>
+</ion-content>
